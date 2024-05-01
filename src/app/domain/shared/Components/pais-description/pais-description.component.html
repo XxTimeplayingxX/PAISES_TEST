@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        @for (paises of pais; track paises) 
+        {
+            <div class="col">
+                <div class="card">
+
+                    <img [src]="paises.flag" alt="{{paises.name}}" class="flags">
+                    <div>
+                        <strong>Name</strong>
+                        <p>{{paises.name}}</p>
+                    </div>
+                    <div>
+                        <strong>Native Name</strong>
+                        <p>{{paises.nativeName}}</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Agregar</button>
+                        <i class="fa-solid fa-circle-minus" hidden></i>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
