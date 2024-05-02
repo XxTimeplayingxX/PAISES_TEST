@@ -12,6 +12,11 @@ export class PaisesService {
   constructor(private http:HttpClient) { }
 
   getData():Observable<any>{
-    return this.http.get<any>(`${environment.API_URL}`)
+    return this.http.get<any>(`${environment.API_URL}/all`)
+  }
+
+  getCountryNameData(countryName:string):Observable<any>{
+    return this.http.get<any>(`${environment.API_URL}/name/${countryName}`)
+    //https://restcountries.com/v3.1/name/{name}
   }
 }

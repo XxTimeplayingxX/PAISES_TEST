@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        @for (paisesFav of pais; track paisesFav) {
+            <div class="col">
+                <img [src]="paisesFav.flags.png" alt="">
+            </div>
+        }
+    </div>
+</div>

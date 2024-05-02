@@ -5,13 +5,20 @@ import { SharedRoutingModule } from './shared-routing.module';
 
 import { NgxPaginationModule } from 'ngx-pagination';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SidebarComponent } from './sideBar/sidebar/sidebar.component';
+
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SidebarComponent
+  ],
   imports: [
     CommonModule,
     SharedRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

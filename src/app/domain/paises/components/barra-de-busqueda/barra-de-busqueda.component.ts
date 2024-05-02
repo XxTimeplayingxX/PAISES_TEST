@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import { Pais } from '../../../shared/MODELS/Pais/interface.model';
 import { PaisesService } from '../../../services/paises.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-barra-de-busqueda',
@@ -8,5 +9,6 @@ import { PaisesService } from '../../../services/paises.service';
   styleUrl: './barra-de-busqueda.component.css'
 })
 export class BarraDeBusquedaComponent {
+
   
 }

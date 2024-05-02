@@ -1,3 +1,12 @@
+<nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid">
+      <form class="d-flex" role="search" [formGroup]="form">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" formControlName="pais">
+        <button class="btn btn-outline-success" (click)="getDataName()">Search</button>
+      </form>
+      <button class="btn" (click)="mostrarTodos()">Mostrar todos</button>
+    </div>
+  </nav>
 <div class="container">
     <div class="row">
         @for (paises of pais; track paises; let i = $index) 

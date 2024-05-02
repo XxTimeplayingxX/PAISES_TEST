@@ -15,6 +15,10 @@ const routes: Routes = [{
     {
       path: 'labs',
       loadChildren: ()=>import('./domain/labs/paises.module').then(p=>p.PaisesModule)
+    },
+    {
+      path: 'favoritos',
+      loadChildren: ()=>import('./domain/favoritos/favoritos.module').then(f=>f.FavoritosModule)
     }
   ]
 }

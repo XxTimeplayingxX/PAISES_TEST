@@ -5,6 +5,7 @@ import { PaisesRoutingModule } from './paises-routing.module';
 import { BarraDeBusquedaComponent } from './components/barra-de-busqueda/barra-de-busqueda.component';
 import { PaisesComponent } from './pages/paises/paises.component';
 import {PaisDescriptionComponent} from './../shared/Components/pais-description/pais-description.component'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,6 +17,8 @@ import {PaisDescriptionComponent} from './../shared/Components/pais-description/
   imports: [
     CommonModule,
     PaisesRoutingModule,
+    ReactiveFormsModule, 
+    FormsModule
   ]
 })
 export class PaisesModule { }
