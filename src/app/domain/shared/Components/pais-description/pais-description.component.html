@@ -1,22 +1,18 @@
 <div class="container">
     <div class="row">
-        @for (paises of pais; track paises) 
+        @for (paises of pais; track paises; let i = $index) 
         {
             <div class="col">
                 <div class="card">
 
-                    <img [src]="paises.flag" alt="{{paises.name}}" class="flags">
+                    <img [src]="paises.flags.png" alt="{{paises.name.common}}" class="flags">
                     <div>
                         <strong>Name</strong>
-                        <p>{{paises.name}}</p>
+                        <p>{{paises.name.common}}</p>
                     </div>
                     <div>
-                        <strong>Native Name</strong>
-                        <p>{{paises.nativeName}}</p>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Agregar</button>
-                        <i class="fa-solid fa-circle-minus" hidden></i>
+                        <button class="btn btn-primary" (click)="SaveToLocalStorage(i)">Agregar</button>
+                        <i class="fa-solid fa-circle-minus" (click)="retrieveFromLocalStorage()"></i>
                     </div>
                 </div>
             </div>

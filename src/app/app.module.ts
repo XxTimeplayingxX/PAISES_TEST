@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CountryCardComponent } from './domain/labs/components/country-card/country-card.component';
+import { PageCountryComponent } from './domain/labs/pages/page-country/page-country.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountryCardComponent,
+    PageCountryComponent
   ],
   imports: [
     ReactiveFormsModule,

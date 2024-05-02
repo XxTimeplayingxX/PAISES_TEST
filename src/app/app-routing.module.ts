@@ -11,6 +11,10 @@ const routes: Routes = [{
     {
       path: 'paises',
       loadChildren: ()=>import('./domain/paises/paises.module').then(p=>p.PaisesModule)
+    },
+    {
+      path: 'labs',
+      loadChildren: ()=>import('./domain/labs/paises.module').then(p=>p.PaisesModule)
     }
   ]
 }
